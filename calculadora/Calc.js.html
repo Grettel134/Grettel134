@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Calc.css">
+       
+    
+        <meta>
+        <script>
+            var valor1 = null;
+            var valor2 = null;
+            var valor3 = null;
+            function suma(){
+                valor1 = document.getElementsByName("num1")[0].value;
+                valor2 = document.getElementsByName("num2")[0].value;
+                Suma=parseInt(valor1)+parseInt(valor2);
+                alert("El resultado es "+Suma);
+
+            };
+            function multi(){
+                valor1 = document.getElementsByName("num1")[0].value;
+                valor2 = document.getElementsByName("num2")[0].value;
+                prod=parseInt(valor1)*parseInt(valor2);
+                alert("El resultado es"+prod);
+
+            };
+            function Divide(){
+                valor1 = document.getElementsByName("num1")[0].value;
+                valor2 = document.getElementsByName("num2")[0].value;
+                divid=parseInt(valor1)/parseInt(valor2);
+                alert("El resultado es"+divid);
+            };
+            function Resta(){
+                valor1 = document.getElementsByName("num1")[0].value;
+                valor2 = document.getElementsByName("num2")[0].value;
+                Rest=parseInt(valor1)-parseInt(valor2);
+                alert("El resultado es"+Rest);
+            };
+
+
+
+
+        </script>
+        <body>
+            <form name="form" action=""method="get">
+                <h2> Introduce el numero 1</h2>
+                <input type="text" name="num1">
+                <h2> Introduce el numero 2</h2>
+                <input type="text" name="num2">
+                
+
+
+            </form> <br>
+            <button onclick="suma()">Suma</button>
+            <button onclick="multi()">Multi</button>
+            <button onclick="Divide()">Divide</button>
+            <button onclick="Resta()">Resta</button>
+        </body>
+    </head> 
+</html>
